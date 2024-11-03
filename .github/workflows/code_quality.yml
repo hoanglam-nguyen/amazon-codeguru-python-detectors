@@ -20,6 +20,6 @@ jobs:
             - name: 'Qodana Scan'
               uses: JetBrains/qodana-action@v2024.2
               with: # Specify the linter that you would like to run
-                  args: --linter,jetbrains/qodana-python-community:2024.2
+                  args: --linter,jetbrains/qodana-python:2024.2
               env:
                   QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
